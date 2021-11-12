@@ -1,0 +1,58 @@
+.moveable-grid {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+
+  .grid {
+    &-row {
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: stretch;
+
+      &-item {
+        width: 5rem;
+        height: 5rem;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+
+      .active {
+        background-color: yellowgreen;
+      }
+    }
+  }
+
+  .cta {
+    margin-left: 2rem;
+    width: 7rem;
+    height: 7rem;
+    background-color: lightblue;
+
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 33%;
+
+      button {
+        background-color: transparent;
+        width: fit-content;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .block {
+        width: 0.8rem;
+        height: inherit;
+        background-color: red;
+      }
+    }
+
+    .middle {
+      justify-content: space-around;
+    }
+  }
+}

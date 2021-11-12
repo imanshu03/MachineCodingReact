@@ -8,3 +8,12 @@ body,
   margin: 0;
   padding: 0;
 }
+
+.navbar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 2rem;
+  margin-bottom: 1rem;
+}

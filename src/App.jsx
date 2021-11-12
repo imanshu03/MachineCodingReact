@@ -1,8 +1,10 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './index.scss';
-import Navbar from './Navbar/Navbar';
-import RandomColorPalette from './RandomColorPalette';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./index.scss";
+import JoystickGrid from "./JoystickGrid/Components/JoystickGrid";
+import Navbar from "./Navbar/Navbar";
+import { paths } from "./path";
+import RandomColorPalette from "./RandomColorPalette";
 
 const App = () => {
   return (
@@ -11,7 +13,14 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={null} />
-          <Route path="/rcp" element={<RandomColorPalette limit={20} offset={5} />} />
+          <Route
+            path={paths.joystickGrid}
+            element={<JoystickGrid gridSize={5} />}
+          />
+          <Route
+            path={paths.colorPalette}
+            element={<RandomColorPalette limit={20} offset={5} />}
+          />
         </Routes>
       </Router>
     </div>
