@@ -1,10 +1,10 @@
-## Machine Coding Questions React.js
+# Machine Coding Questions React.js
 
-# Joystick Grid
+## Joystick Grid
 
 Implement a NxN matrix and with the use of joystick (Up, Down, Left, Right) move the element from one cell of matrix to another.
 
-# Random Color Palette
+## Random Color Palette
 
 - Implement a NxN matrix 
 - Select a color from the color palette
