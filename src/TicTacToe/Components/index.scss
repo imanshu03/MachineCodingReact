@@ -1,0 +1,19 @@
+.board {
+  display: flex;
+  flex-flow: row wrap;
+  width: 10rem;
+  height: 10rem;
+  align-items: stretch;
+
+  .square {
+    width: 2rem;
+    height: 33.3333%;
+    flex: 0 33.333333% 33.333333%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

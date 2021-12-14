@@ -1,0 +1,23 @@
+.scroll-box {
+  position: relative;
+  overflow-y: auto;
+}
+
+.row {
+  position: absolute;
+}
+
+.header,
+.row {
+  display: flex;
+  width: 40rem;
+
+  span {
+    flex: 0.25;
+  }
+}
+
+.header > span {
+  font-weight: 700;
+  font-size: large;
+}
