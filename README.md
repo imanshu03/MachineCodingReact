@@ -18,4 +18,4 @@ Implement a NxN matrix and with the use of joystick (Up, Down, Left, Right) move
 
 ## Virtual List
 
-- Implement a list that allows to render lists with huge amount of elements without loss of performance.
+- Implement a list that allows to calculates the data to be rendered on the basis of viewport and updates the data on scrolling without loss of performance.
